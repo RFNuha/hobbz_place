@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588666892429",
+    "project_id": "hobbz-place-fc630",
+    "storage_bucket": "hobbz-place-fc630.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588666892429:android:9f8e854258c1d564d1b2c4",
+        "android_client_info": {
+          "package_name": "com.example.hobbz_place"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAE1z1qLCxtuSW51Sh1lGYQhiTcuFMh2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

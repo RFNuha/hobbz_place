@@ -1,0 +1,78 @@
+name: hobbz_place                
+description: "Hobbz Place — A personal media tracker for manhwa, manga, books, movies, shows & more."
+version: 1.0.0+1                 
+
+publish_to: 'none'               # Keeps this private (won't accidentally publish online)
+
+environment:
+  sdk: ^3.11.4                  
+
+# DEPENDENCIES
+dependencies:
+  flutter:                        
+    sdk: flutter
+
+  # Local Database 
+  hive: ^2.2.3                    
+  hive_flutter: ^1.1.0            
+  path_provider: ^2.1.1           # Finds the right folder on each platform to store data
+
+  # State Management
+  provider: ^6.1.1                # Lets different parts of the app share and react to data changes
+
+  # Networking (for API calls)
+  http: ^1.1.0                    # Makes web requests - like fetching movie data from TMDB
+  graphql: ^5.1.3                 # For AniList's GraphQL API (a special query language)
+
+  # Images
+  cached_network_image: ^3.3.0    # Downloads cover images and caches them so they load fast next time
+
+  # UI Helpers
+  flutter_rating_bar: ^4.0.1      # Pretty star rating widget (for personal ratings)
+  google_fonts: ^6.1.0            # Easy access to Google Fonts (for the typography design)
+  flutter_staggered_grid_view: ^0.7.0  # Flexible grid layouts (for the library cards)
+
+  # Utilities
+  uuid: ^4.2.1                    # Generates unique IDs for each media item
+  intl: ^0.19.0                   # Date formatting, number formatting
+  string_similarity: ^2.0.0       # Fuzzy matching for duplicate detection
+  firebase_core: ^5.0.0
+  firebase_auth: ^7.0.0
+  cloud_firestore: ^7.0.0
+
+
+# DEV DEPENDENCIES (packages only needed during development, not in the final app)
+
+dev_dependencies:
+  flutter_test:                   # Flutter's built in testing tools
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4 #personalized icon
+  hive_generator: ^2.0.1          # Auto generates Hive adapter code
+  build_runner: ^2.4.7            # Runs code generators
+  flutter_lints: ^6.0.0           # Warns about the bad coding habits
+
+
+# FLUTTER SPECIFIC CONFIG
+
+flutter:
+  uses-material-design: true   
+     # Enables Material Design icons and widgets
+
+  assets:
+    - assets/icon/
+  # add fonts and assets here later:
+  # assets:
+  #   - assets/images/
+  # fonts:
+  #   - family: YourFont
+  #     fonts:
+  #       - asset: assets/fonts/YourFont-Regular.ttf
+
+flutter_launcher_icons:
+ android: true
+ ios: false
+ web:
+    generate: true
+ windows:
+    generate: true
+ image_path: "assets/icon/app_icon.png"
